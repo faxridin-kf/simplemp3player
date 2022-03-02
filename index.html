@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>super muper player</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <div class="title">Now Playing</div>
+        <div class="cover">
+          <img class="cover__img" src="./assets/cover1.png" alt="" />
+        </div>
+        <div class="song"></div>
+        <audio class="audio" src="./assets/MATRANG - Провода.mp3"></audio>
+        <div class="progress__container">
+          <div class="progress"></div>
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100" value="99" class="volume__slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+        <div class="buttons">
+          <div class="btn prev"><img class="rotated" src="./assets/next.png" alt="prev" /></div>
+          <div class="btn play"><img class="img__play" src="./assets/play.png" alt="" /></div>
+          <div class="btn next"><img class="next" src="./assets/next.png" alt="next" /></div>
+        </div>
+        <div id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script/main.js"></script>
+
+  </html>
